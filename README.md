@@ -42,6 +42,7 @@ fc = @(f,x,n,L) symsum( c(f,x,k,L)* exp(j*k*2*pi*x/(2*L)) ,k,1,n)+ symsum( c(f,x
 ```
 
 - Do a quick check of the computations:
+
 ![Complex Coefficients Visual Representation](rectangular_1_complex_coefficients.png)
 ```
 % plot complex coefficients 
