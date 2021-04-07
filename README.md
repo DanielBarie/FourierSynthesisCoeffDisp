@@ -111,6 +111,14 @@ legend("20th Order Numeric Approximation", "Function")
 title("Numeric Approximation, 20th Order")
 ```
 
+![Function and Symbolic 20th Order Approximation by Complex Fourier Series](rectangular_1_approx_20thOrderSymbolic.png) 
+```
+% looks better, huh?
+figure;fplot(f),hold on, fplot(fc(f,x,20,1.5)),hold off
+title("Symbolic Approximation, 20th Order")
+legend("Function", "20th Order Numeric Approximation")
+```
+
 - Save Latex string for later display in app:
 ```
 % one coefficient per line
