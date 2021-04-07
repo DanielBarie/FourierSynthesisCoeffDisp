@@ -41,14 +41,6 @@ c = @(f,x,k,L) 1/(2*L) * int( f * exp(-j*2*pi*k*x/(2*L))  , x,-L,L);
 fc = @(f,x,n,L) symsum( c(f,x,k,L)* exp(j*k*2*pi*x/(2*L)) ,k,1,n)+ symsum( c(f,x,k,L)* exp(j*k*2*pi*x/(2*L)) ,k,-n,-1) + c(f,x,0,L)*exp(j*0*2*pi*x/(2*L));
 ```
 
-- Do a quick check of the computations:
-
-![Complex Coefficients Visual Representation](rectangular_1_complex_coefficients.png)
-```
-% plot complex coefficients 
-figure;stem([-20:20],rect_c)
-```
-
 - Pre-compute Fourier Coefficients up to order 20:
 ```
 % compute complex fourier coefficients for pulse trains
@@ -59,6 +51,14 @@ end
 
 % Save to Matlab function file ('.m')
 matlabFunction(rect_c,'File','koeff_rectangular_1_c')
+```
+
+- Do a quick check of the computations:
+
+![Complex Coefficients Visual Representation](rectangular_1_complex_coefficients.png)
+```
+% plot complex coefficients 
+figure;stem([-20:20],rect_c)
 ```
 
 - Save Latex string for later display in app:
