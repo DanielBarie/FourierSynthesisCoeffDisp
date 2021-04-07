@@ -55,10 +55,16 @@ matlabFunction(rect_c,'File','koeff_rectangular_1_c')
 
 - Do a quick check of the computations:
 
-![Complex Coefficients Visual Representation](rectangular_1_complex_coefficients.png)
+![Complex Coefficients Visual Representation](rectangular_1_complex_coefficients.png)  
 ```
 % plot complex coefficients 
 figure;stem([-20:20],rect_c)
+```
+
+![Function and Second Order Approximation by Complex Fourier Series](rectangular_1_approx_2ndorder.png)  
+```
+figure;fplot(fc(f,x,2,1.5)), hold on, fplot(f), hold off
+legend("2nd Order Approximation","Function")
 ```
 
 - Save Latex string for later display in app:
