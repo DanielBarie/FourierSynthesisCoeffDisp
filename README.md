@@ -32,7 +32,7 @@ matlabFunction(f,'File','rectangular_1')
 c = @(f,x,k,L) 1/(2*L) * int( f * exp(-j*2*pi*k*x/(2*L))  , x,-L,L);
 ```
 
-- Define symbolic sum (n-th order) approximating the original function (sawtooth pulse train):
+- Define symbolic sum (n-th order) approximating the original function (pulse train):
 ```
 % fc is computation via complex coefficients
 % this is not als slick as it could be 
