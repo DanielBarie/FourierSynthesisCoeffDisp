@@ -9,7 +9,9 @@ And yes, the functions/pulse trains are not running from t=-inf to t=+inf.
 Since this is more of a teaching tool these limitations are not a deal breaker. But you should be aware of it.  
 We're doing signals (and systems), that's why there is no units (at least on the y-axis). Imagine this being some voltage having been normalized to a maximum amplitude of "1".
 
-# How Fourier Coefficients / Functions are prepared  
+# How Fourier Coefficients / Functions are prepared 
+This (unintentionally) turned into a nice run-down of using Matlab for Complex Fourier Series Computation. See the other App Repo (FourierSynthesis) for Real Coefficients (a-b-fashion with Cosine and Sine). 
+
 - Set up Matlab for symbolic computation of Fourier Coefficients: 
 ```
 syms x k L n
