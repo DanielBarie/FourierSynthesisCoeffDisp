@@ -68,6 +68,27 @@ figure;fplot(fc(f,x,2,1.5)), hold on, fplot(f), hold off
 legend("2nd Order Approximation","Function")
 ```
 
+
+![Function and Numeric First Order Approximation by Complex Fourier Series](rectangular_1_approx_1stOrderNumeric.png)  
+```
+% quick manual computation of numeric first order approximation
+% create time vector
+tv = [-5:0.05:5];
+% create numeric (matlab) function of pulse train
+rect_1 = matlabFunction(f)
+% manual summing, 
+% rect_c(21) is coefficient #0,
+% rect_c(20) is coefficient #-1
+% rect_c(22) is coefficient #1
+% and we know that our rectangular pulse train has a period of T=3
+sn = rect_c(21) *exp(1i*2*pi*0*tv/3) + rect_c(20) *exp(1i*2*pi*-1*tv/3) +rect_c(22) *exp(1i*2*pi*1*tv/3)
+% plot original function and manually summed first order approximation
+figure;plot(tv,rect_1(tv)), hold on, plot(tv, sn), hold off
+title("Numeric Computation of First Order Approximation")
+legend("Function", "1st Order Approximation")
+
+```
+
 - Save Latex string for later display in app:
 ```
 % one coefficient per line
