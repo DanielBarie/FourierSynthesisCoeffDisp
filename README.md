@@ -1,6 +1,8 @@
 # Fourier Synthesis Demo App with Coefficient Display
 Fourier Synthesis Demo App with Coefficient Display
 
+![App Main Screen](app_screen.png)
+
 # Implemented Functions
 ## Rectangular 1
 Rectangular Pulse Train without DC Offset.  
