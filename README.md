@@ -91,6 +91,26 @@ legend("Function", "1st Order Approximation")
 
 ```
 
+
+![Function and Numeric 20th Order Approximation by Complex Fourier Series](rectangular_1_approx_20thOrderNumeric.png) 
+```
+% do a full computation taking all (41) coefficients
+% as close to 42 as it gets ;)
+% we'll notice artifacts from loss of precision
+% one symptom thereof will be plot complaining
+% about not being able to display imaginary arguments...
+% these imaginary parts result from numeric imprecision when
+% doing coefficient conversion from symbolic to double
+% sn means sum, numeric
+sn = 0;
+for R = 1:41
+ sn = sn + double(rect_c(R))* exp(1i*2*pi*(R-21)*tv/3);
+end
+figure;plot(tv,sn), hold on, plot(tv, rect_1(tv)), hold off;
+legend("20th Order Numeric Approximation", "Function")
+title("Numeric Approximation, 20th Order")
+```
+
 - Save Latex string for later display in app:
 ```
 % one coefficient per line
