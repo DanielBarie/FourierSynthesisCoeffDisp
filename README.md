@@ -26,7 +26,7 @@ f = rectangularPulse(-1,1,x)  + rectangularPulse(-1,1,x-3) + rectangularPulse(-1
 matlabFunction(f,'File','rectangular_1')
 ```
 
-- Define functions for symbolic coefficient calculation: 
+- Define function for symbolic coefficient calculation: 
 ```
 % complex coefficients
 c = @(f,x,k,L) 1/(2*L) * int( f * exp(-j*2*pi*k*x/(2*L))  , x,-L,L);
