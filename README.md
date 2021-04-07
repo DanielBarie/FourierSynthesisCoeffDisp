@@ -1,4 +1,4 @@
-# Fourier Synthesis Demo App with Coefficient Display
+# Fourier Synthesis Demo App with Coefficient Visual Display
 Fourier Synthesis Demo App with Coefficient Display
 
 ![App Main Screen](app_screen.png)
