@@ -63,6 +63,7 @@ figure;stem([-20:20],rect_c)
 
 ![Function and Second Order Approximation by Complex Fourier Series](rectangular_1_approx_2ndorder.png)  
 ```
+% symbolic calculation of approximating function fc
 figure;fplot(fc(f,x,2,1.5)), hold on, fplot(f), hold off
 legend("2nd Order Approximation","Function")
 ```
