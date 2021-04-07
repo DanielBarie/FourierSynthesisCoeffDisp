@@ -4,7 +4,7 @@ Fourier Synthesis Demo App with Coefficient Display
 ![App Main Screen](app_screen.png)
 
 Because of limitations regarding redistribution of code/functionality contained in the Symbolic Math Toolbox this app doesn't do coefficient calculation in real time. Working around the limitations leads to pre-calculated Fourier Coefficients being used. So we need to pre-calculate the coefficients (see steps below).  
-And yes, the functions are not running from t=-inf to t=+inf. 
+And yes, the functions/pulse trains are not running from t=-inf to t=+inf. 
 
 Since this is more of a teaching tool these limitations are not a deal breaker. But you should be aware of it.  
 We're doing signals (and systems), that's why there is no units (at least on the y-axis). Imagine this being some voltage having been normalized to a maximum amplitude of "1".
