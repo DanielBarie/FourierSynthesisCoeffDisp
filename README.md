@@ -11,6 +11,12 @@ Deploying this as a stand-alone app (.exe) isn't possible because of a bug in "m
 Since this is more of a teaching tool these limitations are not a deal breaker. But you should be aware of it.  
 We're doing signals (and systems), that's why there is no units (at least on the y-axis). Imagine this being some voltage having been normalized to a maximum amplitude of "1".
 
+## Choosing a Waveform
+![App Window, Drop Down for choosing Waveform opened](app_screen_chose_waveform.png)
+
+You may choose a waveform by clicking the drop down menu in the upper left corner.
+
+
 # How Fourier Coefficients / Functions are prepared 
 This (unintentionally) turned into a nice run-down of using Matlab for Complex Fourier Series Computation. See the other App Repo (FourierSynthesis) for Real Coefficients (a-b-fashion with Cosine and Sine). 
 
