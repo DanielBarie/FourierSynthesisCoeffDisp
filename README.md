@@ -12,9 +12,14 @@ Since this is more of a teaching tool these limitations are not a deal breaker. 
 We're doing signals (and systems), that's why there is no units (at least on the y-axis). Imagine this being some voltage having been normalized to a maximum amplitude of "1".
 
 ## Choosing a Waveform
-![App Window, Drop Down for choosing Waveform opened](app_screen_chose_waveform.png)
+![App Window, Drop Down for choosing Waveform opened](app_screen_choose_waveform.png)
 
 You may choose a waveform by clicking the drop down menu in the upper left corner.
+
+## Changing the Number of Coefficients used for Approximation
+![App Window, Bandwidth Selection Slider highlighted](app_screen_bw_slider.png)
+
+There's a slider setting the number of coefficients used for calculating the approximation (marked in red). The color of  the coefficients that are ununsed will change to grey. In the example above there's only the DC part (coefficient #0). 
 
 
 # How Fourier Coefficients / Functions are prepared 
