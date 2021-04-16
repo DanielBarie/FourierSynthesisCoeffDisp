@@ -145,7 +145,7 @@ fclose(fid)
 
 - Now, there's Fourier Coefficients (complex) up to order 20 and the original function in a file for later use in the app.
 
-# Implemented Functions
+# Implemented Pulse Trains
 ## Rectangular 1
 Rectangular Pulse Train without DC Offset.  
 
