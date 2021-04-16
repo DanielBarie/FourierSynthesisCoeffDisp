@@ -147,7 +147,8 @@ fclose(fid)
 
 # Implemented Pulse Trains
 ## Rectangular 1
-Rectangular Pulse Train without DC Offset.  
+Rectangular Pulse Train without/with DC Offset.  
+This one is an interesting case for teaching/discussion. Does it have an offset? If no, why not? If yes, why so? 
 
 ![Rectangular Pulse Train #1](rectangular_1.png)
 ```
